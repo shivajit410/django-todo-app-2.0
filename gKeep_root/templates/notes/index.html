@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+<!-- Content goes here -->
+{% block content %}
+
+<div class="logos center">
+  <a href="#"
+    ><img
+      src="https://techstack-logos.s3.ap-south-1.amazonaws.com/google_keep.png"
+      alt="G-Keep"
+  /></a>
+  <span class="plus">+</span>
+  <a href="#"
+    ><img
+      src="https://techstack-logos.s3.ap-south-1.amazonaws.com/django1.png"
+      alt="Django"
+  /></a>
+  <span class="plus">+</span>
+
+  <a href="#"
+    ><img
+      src="https://techstack-logos.s3.ap-south-1.amazonaws.com/heroku-.png"
+      alt="Heroku"
+  /></a>
+</div>
+
+<div class="create-note center">
+  <textarea
+    name="content"
+    id="#content"
+    cols="30"
+    rows="10"
+    placeholder="Take a note.."
+  ></textarea>
+  <button class="submit-btn center" type="submit">
+    <i class="fas fa-plus center"></i>
+  </button>
+</div>
+
+<div class="notes">
+  <div class="note">
+    <p class="note-content">Lorem ipsum dolor sit amet.</p>
+    <a href="#"><i class="edit fas fa-pen"></i></a>
+    <a href="#"><i class="delete far fa-trash-alt"></i></a>
+  </div>
+  <div class="note">
+    <p class="note-content">Lorem ipsum dolor sit amet.</p>
+    <a href="#"><i class="edit fas fa-pen"></i></a>
+    <a href="#"><i class="delete far fa-trash-alt"></i></a>
+  </div>
+  <div class="note">
+    <p class="note-content">Lorem ipsum dolor sit amet.</p>
+    <a href="#"><i class="edit fas fa-pen"></i></a>
+    <a href="#"><i class="delete far fa-trash-alt"></i></a>
+  </div>
+  <div class="note">
+    <p class="note-content">Lorem ipsum dolor sit amet.</p>
+    <a href="#"><i class="edit fas fa-pen"></i></a>
+    <a href="#"><i class="delete far fa-trash-alt"></i></a>
+  </div>
+</div>
+
+{% endblock content %}

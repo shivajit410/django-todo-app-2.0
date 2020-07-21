@@ -1,0 +1,143 @@
+/* ---------- Global Resets ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--primary-color);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----x----- Global Resets -----x----- */
+
+/* ---------- Variables ---------- */
+:root {
+  --primary-color: #c6e0ff;
+}
+/* -----x----- Variables -----x----- */
+
+/* ---------- Logos ---------- */
+
+.logos {
+  margin: 3rem auto;
+}
+
+.plus {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.logos a img {
+  width: 10rem;
+  height: 10rem;
+  padding: 1.5rem;
+}
+
+/* -----x----- Logos -----x----- */
+
+/* ---------- Note creation ---------- */
+
+.create-note {
+  position: relative;
+  margin: 0 auto;
+  width: 80rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+
+.create-note textarea {
+  width: 80rem;
+  height: 20rem;
+  border-radius: 1rem;
+  border: none;
+  resize: none;
+  box-sizing: border-box;
+  font-size: 2.5rem;
+  padding: 1.5rem 0 0 2rem;
+}
+
+.submit-btn {
+  position: absolute;
+  bottom: -2rem;
+  padding-left: 70rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.submit-btn i {
+  font-size: 2rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #39a0ed;
+  border-radius: 50% !important;
+}
+
+.submit-btn i:hover {
+  background-color: #1f92ea;
+}
+
+/* -----x----- Note creation -----x----- */
+
+/* ---------- Notes ---------- */
+
+.notes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100vw !important;
+}
+
+.note {
+  margin: 3.5rem;
+  padding: 2rem 2rem;
+  /* font-size: 1.5rem; */
+  width: 35rem;
+  height: 15rem;
+  background-color: #fff;
+  position: relative;
+
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+
+.note-content {
+  font-size: 2rem;
+  /* position: absolute; */
+  max-height: 7rem;
+  overflow: hidden;
+}
+
+.edit {
+  position: absolute;
+  font-size: 2rem;
+  bottom: 1rem;
+  right: 4rem;
+  color: #f0c808;
+}
+
+.delete {
+  position: absolute;
+  font-size: 2rem;
+  bottom: 1rem;
+  right: 1rem;
+  color: #f34213;
+}
+
+/* -----x----- Notes -----x----- */
+
+/* ---------- Demo ---------- */
+
+/* -----x----- Demo -----x----- */
