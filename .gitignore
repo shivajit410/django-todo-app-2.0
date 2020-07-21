@@ -1,2 +1,3 @@
 venv/
 gKeep_root/gKeep/__pycache__/
+gKeep_root/db.sqlite3
