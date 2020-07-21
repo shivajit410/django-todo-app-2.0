@@ -2,4 +2,5 @@ venv/
 gKeep_root/gKeep/__pycache__/
 gKeep_root/notes/__pycache__/
 gKeep_root/notes/migrations/__pycache__/
+gKeep_root/notes/migrations/
 gKeep_root/db.sqlite3
