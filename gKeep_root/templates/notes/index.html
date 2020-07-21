@@ -25,39 +25,29 @@
 </div>
 
 <div class="create-note center">
-  <textarea
-    name="content"
-    id="#content"
-    cols="30"
-    rows="10"
-    placeholder="Take a note.."
-  ></textarea>
-  <button class="submit-btn center" type="submit">
-    <i class="fas fa-plus center"></i>
-  </button>
+  <form action="{% url 'index' %}" method="post">
+    {% csrf_token %}
+    <textarea
+      name="content"
+      id="#content"
+      cols="30"
+      rows="10"
+      placeholder="Take a note.."
+    ></textarea>
+    <button class="submit-btn center" type="submit">
+      <i class="fas fa-plus center"></i>
+    </button>
+  </form>
 </div>
 
 <div class="notes">
+  {% for todo in todos %}
   <div class="note">
-    <p class="note-content">Lorem ipsum dolor sit amet.</p>
+    <p class="note-content">{{todo.data}}</p>
     <a href="#"><i class="edit fas fa-pen"></i></a>
     <a href="#"><i class="delete far fa-trash-alt"></i></a>
   </div>
-  <div class="note">
-    <p class="note-content">Lorem ipsum dolor sit amet.</p>
-    <a href="#"><i class="edit fas fa-pen"></i></a>
-    <a href="#"><i class="delete far fa-trash-alt"></i></a>
-  </div>
-  <div class="note">
-    <p class="note-content">Lorem ipsum dolor sit amet.</p>
-    <a href="#"><i class="edit fas fa-pen"></i></a>
-    <a href="#"><i class="delete far fa-trash-alt"></i></a>
-  </div>
-  <div class="note">
-    <p class="note-content">Lorem ipsum dolor sit amet.</p>
-    <a href="#"><i class="edit fas fa-pen"></i></a>
-    <a href="#"><i class="delete far fa-trash-alt"></i></a>
-  </div>
+  {% endfor %}
 </div>
 
 {% endblock content %}
