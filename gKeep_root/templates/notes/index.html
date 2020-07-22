@@ -30,8 +30,6 @@
     <textarea
       name="content"
       id="#content"
-      cols="30"
-      rows="10"
       placeholder="Take a note.."
     ></textarea>
     <button class="submit-btn center" type="submit">
@@ -45,7 +43,9 @@
   <div class="note">
     <p class="note-content">{{todo.data}}</p>
     <a href="#"><i class="edit fas fa-pen"></i></a>
-    <a href="#"><i class="delete far fa-trash-alt"></i></a>
+    <a href="{% url 'delete_todo' todo.id %}"
+      ><i class="delete far fa-trash-alt"></i
+    ></a>
   </div>
   {% endfor %}
 </div>
